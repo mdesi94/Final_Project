@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+<h1>Log in to Bloggr</h1>
+<br>
+     <form action = "{{ url_for('login') }}" method = "POST">
+         <h3>Login</h3>
+         Username<br>
+         <input type = "text" name = "username" /><br>
+        <br>
+         Password<br>
+         <input type = "password" name = "password" />
+         <br>
+         <br>
+         <input type = "submit" value = "Log in" />
+     </form>
+
+</body>
+</html>

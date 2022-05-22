@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/login">Log in</a>
+  <a href="/login">Log out</a>
+</div>
+
+                <!----create post form---->
+<div align="center">
+<h2>Create Post</h2>
+    <form action="/newpost" method="POST" id="newpost">
+        Title
+        <input type="text" name="title">
+        <br><br>
+        Content
+        <div><textarea rows="30" cols="100" name="content"></textarea></div>
+
+        <div><input type="submit" value="Publish Post"></div>
+    </form>
+
+</body>
+</html>

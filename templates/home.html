@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Bloggr!</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+<div class="topnav">
+  <a class="active" href="/">Home</a>
+  <a href="/login">Log in</a>
+</div>
+
+<br>
+<br>
+<div align="center">
+    <h1>Latest posts on Bloggr:</h1>
+</div>
+<br>
+
+  <table class="table" border="1px" align="center">
+    <tr>
+        <th width="200px">Title</th>
+        <th width="200px">Author</th>
+        <th width="200px">Posted Date</th>
+        <th width="200px">Content</th>
+    </tr>
+    {% for post in posts %}
+    <tr>
+        <td width="200px" align="center">{{ post[1] }}</td>
+        <td width="200px" align="center">{{ post[2] }}</td>
+        <td width="200px" align="center">{{ post[3] }}</td>
+        <td width="200px" align="center">{{ post[4] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+</body>
+</html>
